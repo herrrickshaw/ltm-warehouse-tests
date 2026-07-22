@@ -1,5 +1,7 @@
 # ltm-warehouse-tests
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/herrrickshaw/ltm-warehouse-tests/blob/main/notebooks/colab_test.ipynb)
+
 Test harness for the LTM warehouse maintenance scripts (`scripts/`) —
 exchange resolution, thin-history detection, and the multi-tier
 Yahoo/NSE/SerpApi backfill. Every script here was built and verified
