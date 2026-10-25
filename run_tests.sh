@@ -56,4 +56,8 @@ echo "Running test_nse_tier.py..."
 python3 "$TESTS_DIR/test_nse_tier.py"
 
 echo
+echo "Running offline pytest suite (no DB, no network)..."
+python3 -m pytest -q -p no:cacheprovider "$TESTS_DIR"
+
+echo
 echo "All tests passed."
