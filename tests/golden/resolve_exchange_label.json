@@ -1,0 +1,2450 @@
+{
+ "AU|001257.SZ": [
+  "001257.SZ.AX",
+  "001257.SZ:ASX",
+  "ASX",
+  true
+ ],
+ "AU|279570.KS": [
+  "279570.KS.AX",
+  "279570.KS:ASX",
+  "ASX",
+  true
+ ],
+ "AU|3696": [
+  "3696.AX",
+  "3696:ASX",
+  "ASX",
+  true
+ ],
+ "AU|3696.HK": [
+  "3696.HK.AX",
+  "3696.HK:ASX",
+  "ASX",
+  true
+ ],
+ "AU|394420.KQ": [
+  "394420.KQ.AX",
+  "394420.KQ:ASX",
+  "ASX",
+  true
+ ],
+ "AU|600000": [
+  "600000.AX",
+  "600000:ASX",
+  "ASX",
+  true
+ ],
+ "AU|6921.TW": [
+  "6921.TW.AX",
+  "6921.TW:ASX",
+  "ASX",
+  true
+ ],
+ "AU|7888.TWO": [
+  "7888.TWO.AX",
+  "7888.TWO:ASX",
+  "ASX",
+  true
+ ],
+ "AU|AAPL": [
+  "AAPL.AX",
+  "AAPL:ASX",
+  "ASX",
+  true
+ ],
+ "AU|AB.PA": [
+  "AB.PA.AX",
+  "AB.PA:ASX",
+  "ASX",
+  true
+ ],
+ "AU|CCDS.V": [
+  "CCDS.V.AX",
+  "CCDS.V:ASX",
+  "ASX",
+  true
+ ],
+ "AU|OBCK.DE": [
+  "OBCK.DE.AX",
+  "OBCK.DE:ASX",
+  "ASX",
+  true
+ ],
+ "AU|RELI": [
+  "RELI.AX",
+  "RELI:ASX",
+  "ASX",
+  true
+ ],
+ "AU|RELI.NS": [
+  "RELI.NS.AX",
+  "RELI.NS:ASX",
+  "ASX",
+  true
+ ],
+ "AU|VOD.L": [
+  "VOD.L.AX",
+  "VOD.L:ASX",
+  "ASX",
+  true
+ ],
+ "AU|X.BO": [
+  "X.BO.AX",
+  "X.BO:ASX",
+  "ASX",
+  true
+ ],
+ "AU|ZEF.F": [
+  "ZEF.F.AX",
+  "ZEF.F:ASX",
+  "ASX",
+  true
+ ],
+ "BR|001257.SZ": [
+  "001257.SZ.SA",
+  "001257.SZ:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|279570.KS": [
+  "279570.KS.SA",
+  "279570.KS:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|3696": [
+  "3696.SA",
+  "3696:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|3696.HK": [
+  "3696.HK.SA",
+  "3696.HK:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|394420.KQ": [
+  "394420.KQ.SA",
+  "394420.KQ:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|600000": [
+  "600000.SA",
+  "600000:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|6921.TW": [
+  "6921.TW.SA",
+  "6921.TW:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|7888.TWO": [
+  "7888.TWO.SA",
+  "7888.TWO:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|AAPL": [
+  "AAPL.SA",
+  "AAPL:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|AB.PA": [
+  "AB.PA.SA",
+  "AB.PA:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|CCDS.V": [
+  "CCDS.V.SA",
+  "CCDS.V:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|OBCK.DE": [
+  "OBCK.DE.SA",
+  "OBCK.DE:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|RELI": [
+  "RELI.SA",
+  "RELI:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|RELI.NS": [
+  "RELI.NS.SA",
+  "RELI.NS:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|VOD.L": [
+  "VOD.L.SA",
+  "VOD.L:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|X.BO": [
+  "X.BO.SA",
+  "X.BO:BVMF",
+  "BVMF",
+  true
+ ],
+ "BR|ZEF.F": [
+  "ZEF.F.SA",
+  "ZEF.F:BVMF",
+  "BVMF",
+  true
+ ],
+ "CA|001257.SZ": [
+  "001257.SZ.TO",
+  "001257.SZ:TSE",
+  "TSE",
+  true
+ ],
+ "CA|279570.KS": [
+  "279570.KS.TO",
+  "279570.KS:TSE",
+  "TSE",
+  true
+ ],
+ "CA|3696": [
+  "3696.TO",
+  "3696:TSE",
+  "TSE",
+  true
+ ],
+ "CA|3696.HK": [
+  "3696.HK.TO",
+  "3696.HK:TSE",
+  "TSE",
+  true
+ ],
+ "CA|394420.KQ": [
+  "394420.KQ.TO",
+  "394420.KQ:TSE",
+  "TSE",
+  true
+ ],
+ "CA|600000": [
+  "600000.TO",
+  "600000:TSE",
+  "TSE",
+  true
+ ],
+ "CA|6921.TW": [
+  "6921.TW.TO",
+  "6921.TW:TSE",
+  "TSE",
+  true
+ ],
+ "CA|7888.TWO": [
+  "7888.TWO.TO",
+  "7888.TWO:TSE",
+  "TSE",
+  true
+ ],
+ "CA|AAPL": [
+  "AAPL.TO",
+  "AAPL:TSE",
+  "TSE",
+  true
+ ],
+ "CA|AB.PA": [
+  "AB.PA.TO",
+  "AB.PA:TSE",
+  "TSE",
+  true
+ ],
+ "CA|CCDS.V": [
+  "CCDS.V",
+  "CCDS:CVE",
+  "CVE",
+  true
+ ],
+ "CA|OBCK.DE": [
+  "OBCK.DE.TO",
+  "OBCK.DE:TSE",
+  "TSE",
+  true
+ ],
+ "CA|RELI": [
+  "RELI.TO",
+  "RELI:TSE",
+  "TSE",
+  true
+ ],
+ "CA|RELI.NS": [
+  "RELI.NS.TO",
+  "RELI.NS:TSE",
+  "TSE",
+  true
+ ],
+ "CA|VOD.L": [
+  "VOD.L.TO",
+  "VOD.L:TSE",
+  "TSE",
+  true
+ ],
+ "CA|X.BO": [
+  "X.BO.TO",
+  "X.BO:TSE",
+  "TSE",
+  true
+ ],
+ "CA|ZEF.F": [
+  "ZEF.F.TO",
+  "ZEF.F:TSE",
+  "TSE",
+  true
+ ],
+ "CH|001257.SZ": [
+  "001257.SZ.SW",
+  "001257.SZ:SWX",
+  "SWX",
+  true
+ ],
+ "CH|279570.KS": [
+  "279570.KS.SW",
+  "279570.KS:SWX",
+  "SWX",
+  true
+ ],
+ "CH|3696": [
+  "3696.SW",
+  "3696:SWX",
+  "SWX",
+  true
+ ],
+ "CH|3696.HK": [
+  "3696.HK.SW",
+  "3696.HK:SWX",
+  "SWX",
+  true
+ ],
+ "CH|394420.KQ": [
+  "394420.KQ.SW",
+  "394420.KQ:SWX",
+  "SWX",
+  true
+ ],
+ "CH|600000": [
+  "600000.SW",
+  "600000:SWX",
+  "SWX",
+  true
+ ],
+ "CH|6921.TW": [
+  "6921.TW.SW",
+  "6921.TW:SWX",
+  "SWX",
+  true
+ ],
+ "CH|7888.TWO": [
+  "7888.TWO.SW",
+  "7888.TWO:SWX",
+  "SWX",
+  true
+ ],
+ "CH|AAPL": [
+  "AAPL.SW",
+  "AAPL:SWX",
+  "SWX",
+  true
+ ],
+ "CH|AB.PA": [
+  "AB.PA.SW",
+  "AB.PA:SWX",
+  "SWX",
+  true
+ ],
+ "CH|CCDS.V": [
+  "CCDS.V.SW",
+  "CCDS.V:SWX",
+  "SWX",
+  true
+ ],
+ "CH|OBCK.DE": [
+  "OBCK.DE.SW",
+  "OBCK.DE:SWX",
+  "SWX",
+  true
+ ],
+ "CH|RELI": [
+  "RELI.SW",
+  "RELI:SWX",
+  "SWX",
+  true
+ ],
+ "CH|RELI.NS": [
+  "RELI.NS.SW",
+  "RELI.NS:SWX",
+  "SWX",
+  true
+ ],
+ "CH|VOD.L": [
+  "VOD.L.SW",
+  "VOD.L:SWX",
+  "SWX",
+  true
+ ],
+ "CH|X.BO": [
+  "X.BO.SW",
+  "X.BO:SWX",
+  "SWX",
+  true
+ ],
+ "CH|ZEF.F": [
+  "ZEF.F.SW",
+  "ZEF.F:SWX",
+  "SWX",
+  true
+ ],
+ "CN|001257.SZ": [
+  "001257.SZ",
+  "001257:SHE",
+  "SHE",
+  true
+ ],
+ "CN|279570.KS": [
+  "279570.KS.SS",
+  "279570.KS:SHA",
+  "SHA",
+  true
+ ],
+ "CN|3696": [
+  "3696.SS",
+  "3696:SHA",
+  "SHA",
+  true
+ ],
+ "CN|3696.HK": [
+  "3696.HK.SS",
+  "3696.HK:SHA",
+  "SHA",
+  true
+ ],
+ "CN|394420.KQ": [
+  "394420.KQ.SS",
+  "394420.KQ:SHA",
+  "SHA",
+  true
+ ],
+ "CN|600000": [
+  "600000.SS",
+  "600000:SHA",
+  "SHA",
+  true
+ ],
+ "CN|6921.TW": [
+  "6921.TW.SS",
+  "6921.TW:SHA",
+  "SHA",
+  true
+ ],
+ "CN|7888.TWO": [
+  "7888.TWO.SS",
+  "7888.TWO:SHA",
+  "SHA",
+  true
+ ],
+ "CN|AAPL": [
+  "AAPL.SS",
+  "AAPL:SHA",
+  "SHA",
+  true
+ ],
+ "CN|AB.PA": [
+  "AB.PA.SS",
+  "AB.PA:SHA",
+  "SHA",
+  true
+ ],
+ "CN|CCDS.V": [
+  "CCDS.V.SS",
+  "CCDS.V:SHA",
+  "SHA",
+  true
+ ],
+ "CN|OBCK.DE": [
+  "OBCK.DE.SS",
+  "OBCK.DE:SHA",
+  "SHA",
+  true
+ ],
+ "CN|RELI": [
+  "RELI.SS",
+  "RELI:SHA",
+  "SHA",
+  true
+ ],
+ "CN|RELI.NS": [
+  "RELI.NS.SS",
+  "RELI.NS:SHA",
+  "SHA",
+  true
+ ],
+ "CN|VOD.L": [
+  "VOD.L.SS",
+  "VOD.L:SHA",
+  "SHA",
+  true
+ ],
+ "CN|X.BO": [
+  "X.BO.SS",
+  "X.BO:SHA",
+  "SHA",
+  true
+ ],
+ "CN|ZEF.F": [
+  "ZEF.F.SS",
+  "ZEF.F:SHA",
+  "SHA",
+  true
+ ],
+ "DE|001257.SZ": [
+  "001257.SZ.DE",
+  "001257.SZ:ETR",
+  "ETR",
+  true
+ ],
+ "DE|279570.KS": [
+  "279570.KS.DE",
+  "279570.KS:ETR",
+  "ETR",
+  true
+ ],
+ "DE|3696": [
+  "3696.DE",
+  "3696:ETR",
+  "ETR",
+  true
+ ],
+ "DE|3696.HK": [
+  "3696.HK.DE",
+  "3696.HK:ETR",
+  "ETR",
+  true
+ ],
+ "DE|394420.KQ": [
+  "394420.KQ.DE",
+  "394420.KQ:ETR",
+  "ETR",
+  true
+ ],
+ "DE|600000": [
+  "600000.DE",
+  "600000:ETR",
+  "ETR",
+  true
+ ],
+ "DE|6921.TW": [
+  "6921.TW.DE",
+  "6921.TW:ETR",
+  "ETR",
+  true
+ ],
+ "DE|7888.TWO": [
+  "7888.TWO.DE",
+  "7888.TWO:ETR",
+  "ETR",
+  true
+ ],
+ "DE|AAPL": [
+  "AAPL.DE",
+  "AAPL:ETR",
+  "ETR",
+  true
+ ],
+ "DE|AB.PA": [
+  "AB.PA.DE",
+  "AB.PA:ETR",
+  "ETR",
+  true
+ ],
+ "DE|CCDS.V": [
+  "CCDS.V.DE",
+  "CCDS.V:ETR",
+  "ETR",
+  true
+ ],
+ "DE|OBCK.DE": [
+  "OBCK.DE",
+  "OBCK:ETR",
+  "ETR",
+  true
+ ],
+ "DE|RELI": [
+  "RELI.DE",
+  "RELI:ETR",
+  "ETR",
+  true
+ ],
+ "DE|RELI.NS": [
+  "RELI.NS.DE",
+  "RELI.NS:ETR",
+  "ETR",
+  true
+ ],
+ "DE|VOD.L": [
+  "VOD.L.DE",
+  "VOD.L:ETR",
+  "ETR",
+  true
+ ],
+ "DE|X.BO": [
+  "X.BO.DE",
+  "X.BO:ETR",
+  "ETR",
+  true
+ ],
+ "DE|ZEF.F": [
+  "ZEF.F",
+  "ZEF:FRA",
+  "FRA",
+  true
+ ],
+ "DK|001257.SZ": [
+  "001257.SZ.CO",
+  "001257.SZ:CPH",
+  "CPH",
+  true
+ ],
+ "DK|279570.KS": [
+  "279570.KS.CO",
+  "279570.KS:CPH",
+  "CPH",
+  true
+ ],
+ "DK|3696": [
+  "3696.CO",
+  "3696:CPH",
+  "CPH",
+  true
+ ],
+ "DK|3696.HK": [
+  "3696.HK.CO",
+  "3696.HK:CPH",
+  "CPH",
+  true
+ ],
+ "DK|394420.KQ": [
+  "394420.KQ.CO",
+  "394420.KQ:CPH",
+  "CPH",
+  true
+ ],
+ "DK|600000": [
+  "600000.CO",
+  "600000:CPH",
+  "CPH",
+  true
+ ],
+ "DK|6921.TW": [
+  "6921.TW.CO",
+  "6921.TW:CPH",
+  "CPH",
+  true
+ ],
+ "DK|7888.TWO": [
+  "7888.TWO.CO",
+  "7888.TWO:CPH",
+  "CPH",
+  true
+ ],
+ "DK|AAPL": [
+  "AAPL.CO",
+  "AAPL:CPH",
+  "CPH",
+  true
+ ],
+ "DK|AB.PA": [
+  "AB.PA.CO",
+  "AB.PA:CPH",
+  "CPH",
+  true
+ ],
+ "DK|CCDS.V": [
+  "CCDS.V.CO",
+  "CCDS.V:CPH",
+  "CPH",
+  true
+ ],
+ "DK|OBCK.DE": [
+  "OBCK.DE.CO",
+  "OBCK.DE:CPH",
+  "CPH",
+  true
+ ],
+ "DK|RELI": [
+  "RELI.CO",
+  "RELI:CPH",
+  "CPH",
+  true
+ ],
+ "DK|RELI.NS": [
+  "RELI.NS.CO",
+  "RELI.NS:CPH",
+  "CPH",
+  true
+ ],
+ "DK|VOD.L": [
+  "VOD.L.CO",
+  "VOD.L:CPH",
+  "CPH",
+  true
+ ],
+ "DK|X.BO": [
+  "X.BO.CO",
+  "X.BO:CPH",
+  "CPH",
+  true
+ ],
+ "DK|ZEF.F": [
+  "ZEF.F.CO",
+  "ZEF.F:CPH",
+  "CPH",
+  true
+ ],
+ "EU|001257.SZ": [
+  "001257.SZ",
+  "001257.SZ",
+  null,
+  false
+ ],
+ "EU|279570.KS": [
+  "279570.KS",
+  "279570.KS",
+  null,
+  false
+ ],
+ "EU|3696": [
+  "3696",
+  "3696",
+  null,
+  false
+ ],
+ "EU|3696.HK": [
+  "3696.HK",
+  "3696.HK",
+  null,
+  false
+ ],
+ "EU|394420.KQ": [
+  "394420.KQ",
+  "394420.KQ",
+  null,
+  false
+ ],
+ "EU|600000": [
+  "600000",
+  "600000",
+  null,
+  false
+ ],
+ "EU|6921.TW": [
+  "6921.TW",
+  "6921.TW",
+  null,
+  false
+ ],
+ "EU|7888.TWO": [
+  "7888.TWO",
+  "7888.TWO",
+  null,
+  false
+ ],
+ "EU|AAPL": [
+  "AAPL",
+  "AAPL",
+  null,
+  false
+ ],
+ "EU|AB.PA": [
+  "AB.PA",
+  "AB.PA",
+  null,
+  false
+ ],
+ "EU|CCDS.V": [
+  "CCDS.V",
+  "CCDS.V",
+  null,
+  false
+ ],
+ "EU|OBCK.DE": [
+  "OBCK.DE",
+  "OBCK.DE",
+  null,
+  false
+ ],
+ "EU|RELI": [
+  "RELI",
+  "RELI",
+  null,
+  false
+ ],
+ "EU|RELI.NS": [
+  "RELI.NS",
+  "RELI.NS",
+  null,
+  false
+ ],
+ "EU|VOD.L": [
+  "VOD.L",
+  "VOD.L",
+  null,
+  false
+ ],
+ "EU|X.BO": [
+  "X.BO",
+  "X.BO",
+  null,
+  false
+ ],
+ "EU|ZEF.F": [
+  "ZEF.F",
+  "ZEF.F",
+  null,
+  false
+ ],
+ "FI|001257.SZ": [
+  "001257.SZ.HE",
+  "001257.SZ:HEL",
+  "HEL",
+  true
+ ],
+ "FI|279570.KS": [
+  "279570.KS.HE",
+  "279570.KS:HEL",
+  "HEL",
+  true
+ ],
+ "FI|3696": [
+  "3696.HE",
+  "3696:HEL",
+  "HEL",
+  true
+ ],
+ "FI|3696.HK": [
+  "3696.HK.HE",
+  "3696.HK:HEL",
+  "HEL",
+  true
+ ],
+ "FI|394420.KQ": [
+  "394420.KQ.HE",
+  "394420.KQ:HEL",
+  "HEL",
+  true
+ ],
+ "FI|600000": [
+  "600000.HE",
+  "600000:HEL",
+  "HEL",
+  true
+ ],
+ "FI|6921.TW": [
+  "6921.TW.HE",
+  "6921.TW:HEL",
+  "HEL",
+  true
+ ],
+ "FI|7888.TWO": [
+  "7888.TWO.HE",
+  "7888.TWO:HEL",
+  "HEL",
+  true
+ ],
+ "FI|AAPL": [
+  "AAPL.HE",
+  "AAPL:HEL",
+  "HEL",
+  true
+ ],
+ "FI|AB.PA": [
+  "AB.PA.HE",
+  "AB.PA:HEL",
+  "HEL",
+  true
+ ],
+ "FI|CCDS.V": [
+  "CCDS.V.HE",
+  "CCDS.V:HEL",
+  "HEL",
+  true
+ ],
+ "FI|OBCK.DE": [
+  "OBCK.DE.HE",
+  "OBCK.DE:HEL",
+  "HEL",
+  true
+ ],
+ "FI|RELI": [
+  "RELI.HE",
+  "RELI:HEL",
+  "HEL",
+  true
+ ],
+ "FI|RELI.NS": [
+  "RELI.NS.HE",
+  "RELI.NS:HEL",
+  "HEL",
+  true
+ ],
+ "FI|VOD.L": [
+  "VOD.L.HE",
+  "VOD.L:HEL",
+  "HEL",
+  true
+ ],
+ "FI|X.BO": [
+  "X.BO.HE",
+  "X.BO:HEL",
+  "HEL",
+  true
+ ],
+ "FI|ZEF.F": [
+  "ZEF.F.HE",
+  "ZEF.F:HEL",
+  "HEL",
+  true
+ ],
+ "FR|001257.SZ": [
+  "001257.SZ.PA",
+  "001257.SZ:EPA",
+  "EPA",
+  true
+ ],
+ "FR|279570.KS": [
+  "279570.KS.PA",
+  "279570.KS:EPA",
+  "EPA",
+  true
+ ],
+ "FR|3696": [
+  "3696.PA",
+  "3696:EPA",
+  "EPA",
+  true
+ ],
+ "FR|3696.HK": [
+  "3696.HK.PA",
+  "3696.HK:EPA",
+  "EPA",
+  true
+ ],
+ "FR|394420.KQ": [
+  "394420.KQ.PA",
+  "394420.KQ:EPA",
+  "EPA",
+  true
+ ],
+ "FR|600000": [
+  "600000.PA",
+  "600000:EPA",
+  "EPA",
+  true
+ ],
+ "FR|6921.TW": [
+  "6921.TW.PA",
+  "6921.TW:EPA",
+  "EPA",
+  true
+ ],
+ "FR|7888.TWO": [
+  "7888.TWO.PA",
+  "7888.TWO:EPA",
+  "EPA",
+  true
+ ],
+ "FR|AAPL": [
+  "AAPL.PA",
+  "AAPL:EPA",
+  "EPA",
+  true
+ ],
+ "FR|AB.PA": [
+  "AB.PA",
+  "AB:EPA",
+  "EPA",
+  true
+ ],
+ "FR|CCDS.V": [
+  "CCDS.V.PA",
+  "CCDS.V:EPA",
+  "EPA",
+  true
+ ],
+ "FR|OBCK.DE": [
+  "OBCK.DE.PA",
+  "OBCK.DE:EPA",
+  "EPA",
+  true
+ ],
+ "FR|RELI": [
+  "RELI.PA",
+  "RELI:EPA",
+  "EPA",
+  true
+ ],
+ "FR|RELI.NS": [
+  "RELI.NS.PA",
+  "RELI.NS:EPA",
+  "EPA",
+  true
+ ],
+ "FR|VOD.L": [
+  "VOD.L.PA",
+  "VOD.L:EPA",
+  "EPA",
+  true
+ ],
+ "FR|X.BO": [
+  "X.BO.PA",
+  "X.BO:EPA",
+  "EPA",
+  true
+ ],
+ "FR|ZEF.F": [
+  "ZEF.F.PA",
+  "ZEF.F:EPA",
+  "EPA",
+  true
+ ],
+ "GB|001257.SZ": [
+  "001257.SZ.L",
+  "001257.SZ:LON",
+  "LON",
+  true
+ ],
+ "GB|279570.KS": [
+  "279570.KS.L",
+  "279570.KS:LON",
+  "LON",
+  true
+ ],
+ "GB|3696": [
+  "3696.L",
+  "3696:LON",
+  "LON",
+  true
+ ],
+ "GB|3696.HK": [
+  "3696.HK.L",
+  "3696.HK:LON",
+  "LON",
+  true
+ ],
+ "GB|394420.KQ": [
+  "394420.KQ.L",
+  "394420.KQ:LON",
+  "LON",
+  true
+ ],
+ "GB|600000": [
+  "600000.L",
+  "600000:LON",
+  "LON",
+  true
+ ],
+ "GB|6921.TW": [
+  "6921.TW.L",
+  "6921.TW:LON",
+  "LON",
+  true
+ ],
+ "GB|7888.TWO": [
+  "7888.TWO.L",
+  "7888.TWO:LON",
+  "LON",
+  true
+ ],
+ "GB|AAPL": [
+  "AAPL.L",
+  "AAPL:LON",
+  "LON",
+  true
+ ],
+ "GB|AB.PA": [
+  "AB.PA.L",
+  "AB.PA:LON",
+  "LON",
+  true
+ ],
+ "GB|CCDS.V": [
+  "CCDS.V.L",
+  "CCDS.V:LON",
+  "LON",
+  true
+ ],
+ "GB|OBCK.DE": [
+  "OBCK.DE.L",
+  "OBCK.DE:LON",
+  "LON",
+  true
+ ],
+ "GB|RELI": [
+  "RELI.L",
+  "RELI:LON",
+  "LON",
+  true
+ ],
+ "GB|RELI.NS": [
+  "RELI.NS.L",
+  "RELI.NS:LON",
+  "LON",
+  true
+ ],
+ "GB|VOD.L": [
+  "VOD.L",
+  "VOD:LON",
+  "LON",
+  true
+ ],
+ "GB|X.BO": [
+  "X.BO.L",
+  "X.BO:LON",
+  "LON",
+  true
+ ],
+ "GB|ZEF.F": [
+  "ZEF.F.L",
+  "ZEF.F:LON",
+  "LON",
+  true
+ ],
+ "HK|001257.SZ": [
+  "001257.SZ.HK",
+  "001257.SZ:HKG",
+  "HKG",
+  true
+ ],
+ "HK|279570.KS": [
+  "279570.KS.HK",
+  "279570.KS:HKG",
+  "HKG",
+  true
+ ],
+ "HK|3696": [
+  "3696.HK",
+  "3696:HKG",
+  "HKG",
+  true
+ ],
+ "HK|3696.HK": [
+  "3696.HK",
+  "3696:HKG",
+  "HKG",
+  true
+ ],
+ "HK|394420.KQ": [
+  "394420.KQ.HK",
+  "394420.KQ:HKG",
+  "HKG",
+  true
+ ],
+ "HK|600000": [
+  "600000.HK",
+  "600000:HKG",
+  "HKG",
+  true
+ ],
+ "HK|6921.TW": [
+  "6921.TW.HK",
+  "6921.TW:HKG",
+  "HKG",
+  true
+ ],
+ "HK|7888.TWO": [
+  "7888.TWO.HK",
+  "7888.TWO:HKG",
+  "HKG",
+  true
+ ],
+ "HK|AAPL": [
+  "AAPL.HK",
+  "AAPL:HKG",
+  "HKG",
+  true
+ ],
+ "HK|AB.PA": [
+  "AB.PA.HK",
+  "AB.PA:HKG",
+  "HKG",
+  true
+ ],
+ "HK|CCDS.V": [
+  "CCDS.V.HK",
+  "CCDS.V:HKG",
+  "HKG",
+  true
+ ],
+ "HK|OBCK.DE": [
+  "OBCK.DE.HK",
+  "OBCK.DE:HKG",
+  "HKG",
+  true
+ ],
+ "HK|RELI": [
+  "RELI.HK",
+  "RELI:HKG",
+  "HKG",
+  true
+ ],
+ "HK|RELI.NS": [
+  "RELI.NS.HK",
+  "RELI.NS:HKG",
+  "HKG",
+  true
+ ],
+ "HK|VOD.L": [
+  "VOD.L.HK",
+  "VOD.L:HKG",
+  "HKG",
+  true
+ ],
+ "HK|X.BO": [
+  "X.BO.HK",
+  "X.BO:HKG",
+  "HKG",
+  true
+ ],
+ "HK|ZEF.F": [
+  "ZEF.F.HK",
+  "ZEF.F:HKG",
+  "HKG",
+  true
+ ],
+ "IN|001257.SZ": [
+  "001257.SZ.NS",
+  "001257.SZ:NSE",
+  "NSE",
+  true
+ ],
+ "IN|279570.KS": [
+  "279570.KS.NS",
+  "279570.KS:NSE",
+  "NSE",
+  true
+ ],
+ "IN|3696": [
+  "3696.NS",
+  "3696:NSE",
+  "NSE",
+  true
+ ],
+ "IN|3696.HK": [
+  "3696.HK.NS",
+  "3696.HK:NSE",
+  "NSE",
+  true
+ ],
+ "IN|394420.KQ": [
+  "394420.KQ.NS",
+  "394420.KQ:NSE",
+  "NSE",
+  true
+ ],
+ "IN|600000": [
+  "600000.NS",
+  "600000:NSE",
+  "NSE",
+  true
+ ],
+ "IN|6921.TW": [
+  "6921.TW.NS",
+  "6921.TW:NSE",
+  "NSE",
+  true
+ ],
+ "IN|7888.TWO": [
+  "7888.TWO.NS",
+  "7888.TWO:NSE",
+  "NSE",
+  true
+ ],
+ "IN|AAPL": [
+  "AAPL.NS",
+  "AAPL:NSE",
+  "NSE",
+  true
+ ],
+ "IN|AB.PA": [
+  "AB.PA.NS",
+  "AB.PA:NSE",
+  "NSE",
+  true
+ ],
+ "IN|CCDS.V": [
+  "CCDS.V.NS",
+  "CCDS.V:NSE",
+  "NSE",
+  true
+ ],
+ "IN|OBCK.DE": [
+  "OBCK.DE.NS",
+  "OBCK.DE:NSE",
+  "NSE",
+  true
+ ],
+ "IN|RELI": [
+  "RELI.NS",
+  "RELI:NSE",
+  "NSE",
+  true
+ ],
+ "IN|RELI.NS": [
+  "RELI.NS",
+  "RELI:NSE",
+  "NSE",
+  true
+ ],
+ "IN|VOD.L": [
+  "VOD.L.NS",
+  "VOD.L:NSE",
+  "NSE",
+  true
+ ],
+ "IN|X.BO": [
+  "X.BO",
+  "X:BOM",
+  "BOM",
+  true
+ ],
+ "IN|ZEF.F": [
+  "ZEF.F.NS",
+  "ZEF.F:NSE",
+  "NSE",
+  true
+ ],
+ "JP|001257.SZ": [
+  "001257.SZ.T",
+  "001257.SZ:TYO",
+  "TYO",
+  true
+ ],
+ "JP|279570.KS": [
+  "279570.KS.T",
+  "279570.KS:TYO",
+  "TYO",
+  true
+ ],
+ "JP|3696": [
+  "3696.T",
+  "3696:TYO",
+  "TYO",
+  true
+ ],
+ "JP|3696.HK": [
+  "3696.HK.T",
+  "3696.HK:TYO",
+  "TYO",
+  true
+ ],
+ "JP|394420.KQ": [
+  "394420.KQ.T",
+  "394420.KQ:TYO",
+  "TYO",
+  true
+ ],
+ "JP|600000": [
+  "600000.T",
+  "600000:TYO",
+  "TYO",
+  true
+ ],
+ "JP|6921.TW": [
+  "6921.TW.T",
+  "6921.TW:TYO",
+  "TYO",
+  true
+ ],
+ "JP|7888.TWO": [
+  "7888.TWO.T",
+  "7888.TWO:TYO",
+  "TYO",
+  true
+ ],
+ "JP|AAPL": [
+  "AAPL.T",
+  "AAPL:TYO",
+  "TYO",
+  true
+ ],
+ "JP|AB.PA": [
+  "AB.PA.T",
+  "AB.PA:TYO",
+  "TYO",
+  true
+ ],
+ "JP|CCDS.V": [
+  "CCDS.V.T",
+  "CCDS.V:TYO",
+  "TYO",
+  true
+ ],
+ "JP|OBCK.DE": [
+  "OBCK.DE.T",
+  "OBCK.DE:TYO",
+  "TYO",
+  true
+ ],
+ "JP|RELI": [
+  "RELI.T",
+  "RELI:TYO",
+  "TYO",
+  true
+ ],
+ "JP|RELI.NS": [
+  "RELI.NS.T",
+  "RELI.NS:TYO",
+  "TYO",
+  true
+ ],
+ "JP|VOD.L": [
+  "VOD.L.T",
+  "VOD.L:TYO",
+  "TYO",
+  true
+ ],
+ "JP|X.BO": [
+  "X.BO.T",
+  "X.BO:TYO",
+  "TYO",
+  true
+ ],
+ "JP|ZEF.F": [
+  "ZEF.F.T",
+  "ZEF.F:TYO",
+  "TYO",
+  true
+ ],
+ "KR|001257.SZ": [
+  "001257.SZ.KS",
+  "001257.SZ:KRX",
+  "KRX",
+  true
+ ],
+ "KR|279570.KS": [
+  "279570.KS",
+  "279570:KRX",
+  "KRX",
+  true
+ ],
+ "KR|3696": [
+  "3696.KS",
+  "3696:KRX",
+  "KRX",
+  true
+ ],
+ "KR|3696.HK": [
+  "3696.HK.KS",
+  "3696.HK:KRX",
+  "KRX",
+  true
+ ],
+ "KR|394420.KQ": [
+  "394420.KQ",
+  "394420:KOSDAQ",
+  "KOSDAQ",
+  true
+ ],
+ "KR|600000": [
+  "600000.KS",
+  "600000:KRX",
+  "KRX",
+  true
+ ],
+ "KR|6921.TW": [
+  "6921.TW.KS",
+  "6921.TW:KRX",
+  "KRX",
+  true
+ ],
+ "KR|7888.TWO": [
+  "7888.TWO.KS",
+  "7888.TWO:KRX",
+  "KRX",
+  true
+ ],
+ "KR|AAPL": [
+  "AAPL.KS",
+  "AAPL:KRX",
+  "KRX",
+  true
+ ],
+ "KR|AB.PA": [
+  "AB.PA.KS",
+  "AB.PA:KRX",
+  "KRX",
+  true
+ ],
+ "KR|CCDS.V": [
+  "CCDS.V.KS",
+  "CCDS.V:KRX",
+  "KRX",
+  true
+ ],
+ "KR|OBCK.DE": [
+  "OBCK.DE.KS",
+  "OBCK.DE:KRX",
+  "KRX",
+  true
+ ],
+ "KR|RELI": [
+  "RELI.KS",
+  "RELI:KRX",
+  "KRX",
+  true
+ ],
+ "KR|RELI.NS": [
+  "RELI.NS.KS",
+  "RELI.NS:KRX",
+  "KRX",
+  true
+ ],
+ "KR|VOD.L": [
+  "VOD.L.KS",
+  "VOD.L:KRX",
+  "KRX",
+  true
+ ],
+ "KR|X.BO": [
+  "X.BO.KS",
+  "X.BO:KRX",
+  "KRX",
+  true
+ ],
+ "KR|ZEF.F": [
+  "ZEF.F.KS",
+  "ZEF.F:KRX",
+  "KRX",
+  true
+ ],
+ "NO|001257.SZ": [
+  "001257.SZ.OL",
+  "001257.SZ:OSL",
+  "OSL",
+  true
+ ],
+ "NO|279570.KS": [
+  "279570.KS.OL",
+  "279570.KS:OSL",
+  "OSL",
+  true
+ ],
+ "NO|3696": [
+  "3696.OL",
+  "3696:OSL",
+  "OSL",
+  true
+ ],
+ "NO|3696.HK": [
+  "3696.HK.OL",
+  "3696.HK:OSL",
+  "OSL",
+  true
+ ],
+ "NO|394420.KQ": [
+  "394420.KQ.OL",
+  "394420.KQ:OSL",
+  "OSL",
+  true
+ ],
+ "NO|600000": [
+  "600000.OL",
+  "600000:OSL",
+  "OSL",
+  true
+ ],
+ "NO|6921.TW": [
+  "6921.TW.OL",
+  "6921.TW:OSL",
+  "OSL",
+  true
+ ],
+ "NO|7888.TWO": [
+  "7888.TWO.OL",
+  "7888.TWO:OSL",
+  "OSL",
+  true
+ ],
+ "NO|AAPL": [
+  "AAPL.OL",
+  "AAPL:OSL",
+  "OSL",
+  true
+ ],
+ "NO|AB.PA": [
+  "AB.PA.OL",
+  "AB.PA:OSL",
+  "OSL",
+  true
+ ],
+ "NO|CCDS.V": [
+  "CCDS.V.OL",
+  "CCDS.V:OSL",
+  "OSL",
+  true
+ ],
+ "NO|OBCK.DE": [
+  "OBCK.DE.OL",
+  "OBCK.DE:OSL",
+  "OSL",
+  true
+ ],
+ "NO|RELI": [
+  "RELI.OL",
+  "RELI:OSL",
+  "OSL",
+  true
+ ],
+ "NO|RELI.NS": [
+  "RELI.NS.OL",
+  "RELI.NS:OSL",
+  "OSL",
+  true
+ ],
+ "NO|VOD.L": [
+  "VOD.L.OL",
+  "VOD.L:OSL",
+  "OSL",
+  true
+ ],
+ "NO|X.BO": [
+  "X.BO.OL",
+  "X.BO:OSL",
+  "OSL",
+  true
+ ],
+ "NO|ZEF.F": [
+  "ZEF.F.OL",
+  "ZEF.F:OSL",
+  "OSL",
+  true
+ ],
+ "SA|001257.SZ": [
+  "001257.SZ.SR",
+  "001257.SZ:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|279570.KS": [
+  "279570.KS.SR",
+  "279570.KS:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|3696": [
+  "3696.SR",
+  "3696:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|3696.HK": [
+  "3696.HK.SR",
+  "3696.HK:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|394420.KQ": [
+  "394420.KQ.SR",
+  "394420.KQ:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|600000": [
+  "600000.SR",
+  "600000:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|6921.TW": [
+  "6921.TW.SR",
+  "6921.TW:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|7888.TWO": [
+  "7888.TWO.SR",
+  "7888.TWO:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|AAPL": [
+  "AAPL.SR",
+  "AAPL:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|AB.PA": [
+  "AB.PA.SR",
+  "AB.PA:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|CCDS.V": [
+  "CCDS.V.SR",
+  "CCDS.V:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|OBCK.DE": [
+  "OBCK.DE.SR",
+  "OBCK.DE:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|RELI": [
+  "RELI.SR",
+  "RELI:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|RELI.NS": [
+  "RELI.NS.SR",
+  "RELI.NS:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|VOD.L": [
+  "VOD.L.SR",
+  "VOD.L:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|X.BO": [
+  "X.BO.SR",
+  "X.BO:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SA|ZEF.F": [
+  "ZEF.F.SR",
+  "ZEF.F:TADAWUL",
+  "TADAWUL",
+  true
+ ],
+ "SE|001257.SZ": [
+  "001257.SZ.ST",
+  "001257.SZ:STO",
+  "STO",
+  true
+ ],
+ "SE|279570.KS": [
+  "279570.KS.ST",
+  "279570.KS:STO",
+  "STO",
+  true
+ ],
+ "SE|3696": [
+  "3696.ST",
+  "3696:STO",
+  "STO",
+  true
+ ],
+ "SE|3696.HK": [
+  "3696.HK.ST",
+  "3696.HK:STO",
+  "STO",
+  true
+ ],
+ "SE|394420.KQ": [
+  "394420.KQ.ST",
+  "394420.KQ:STO",
+  "STO",
+  true
+ ],
+ "SE|600000": [
+  "600000.ST",
+  "600000:STO",
+  "STO",
+  true
+ ],
+ "SE|6921.TW": [
+  "6921.TW.ST",
+  "6921.TW:STO",
+  "STO",
+  true
+ ],
+ "SE|7888.TWO": [
+  "7888.TWO.ST",
+  "7888.TWO:STO",
+  "STO",
+  true
+ ],
+ "SE|AAPL": [
+  "AAPL.ST",
+  "AAPL:STO",
+  "STO",
+  true
+ ],
+ "SE|AB.PA": [
+  "AB.PA.ST",
+  "AB.PA:STO",
+  "STO",
+  true
+ ],
+ "SE|CCDS.V": [
+  "CCDS.V.ST",
+  "CCDS.V:STO",
+  "STO",
+  true
+ ],
+ "SE|OBCK.DE": [
+  "OBCK.DE.ST",
+  "OBCK.DE:STO",
+  "STO",
+  true
+ ],
+ "SE|RELI": [
+  "RELI.ST",
+  "RELI:STO",
+  "STO",
+  true
+ ],
+ "SE|RELI.NS": [
+  "RELI.NS.ST",
+  "RELI.NS:STO",
+  "STO",
+  true
+ ],
+ "SE|VOD.L": [
+  "VOD.L.ST",
+  "VOD.L:STO",
+  "STO",
+  true
+ ],
+ "SE|X.BO": [
+  "X.BO.ST",
+  "X.BO:STO",
+  "STO",
+  true
+ ],
+ "SE|ZEF.F": [
+  "ZEF.F.ST",
+  "ZEF.F:STO",
+  "STO",
+  true
+ ],
+ "SG|001257.SZ": [
+  "001257.SZ.SI",
+  "001257.SZ:SGX",
+  "SGX",
+  true
+ ],
+ "SG|279570.KS": [
+  "279570.KS.SI",
+  "279570.KS:SGX",
+  "SGX",
+  true
+ ],
+ "SG|3696": [
+  "3696.SI",
+  "3696:SGX",
+  "SGX",
+  true
+ ],
+ "SG|3696.HK": [
+  "3696.HK.SI",
+  "3696.HK:SGX",
+  "SGX",
+  true
+ ],
+ "SG|394420.KQ": [
+  "394420.KQ.SI",
+  "394420.KQ:SGX",
+  "SGX",
+  true
+ ],
+ "SG|600000": [
+  "600000.SI",
+  "600000:SGX",
+  "SGX",
+  true
+ ],
+ "SG|6921.TW": [
+  "6921.TW.SI",
+  "6921.TW:SGX",
+  "SGX",
+  true
+ ],
+ "SG|7888.TWO": [
+  "7888.TWO.SI",
+  "7888.TWO:SGX",
+  "SGX",
+  true
+ ],
+ "SG|AAPL": [
+  "AAPL.SI",
+  "AAPL:SGX",
+  "SGX",
+  true
+ ],
+ "SG|AB.PA": [
+  "AB.PA.SI",
+  "AB.PA:SGX",
+  "SGX",
+  true
+ ],
+ "SG|CCDS.V": [
+  "CCDS.V.SI",
+  "CCDS.V:SGX",
+  "SGX",
+  true
+ ],
+ "SG|OBCK.DE": [
+  "OBCK.DE.SI",
+  "OBCK.DE:SGX",
+  "SGX",
+  true
+ ],
+ "SG|RELI": [
+  "RELI.SI",
+  "RELI:SGX",
+  "SGX",
+  true
+ ],
+ "SG|RELI.NS": [
+  "RELI.NS.SI",
+  "RELI.NS:SGX",
+  "SGX",
+  true
+ ],
+ "SG|VOD.L": [
+  "VOD.L.SI",
+  "VOD.L:SGX",
+  "SGX",
+  true
+ ],
+ "SG|X.BO": [
+  "X.BO.SI",
+  "X.BO:SGX",
+  "SGX",
+  true
+ ],
+ "SG|ZEF.F": [
+  "ZEF.F.SI",
+  "ZEF.F:SGX",
+  "SGX",
+  true
+ ],
+ "TW|001257.SZ": [
+  "001257.SZ.TW",
+  "001257.SZ:TPE",
+  "TPE",
+  true
+ ],
+ "TW|279570.KS": [
+  "279570.KS.TW",
+  "279570.KS:TPE",
+  "TPE",
+  true
+ ],
+ "TW|3696": [
+  "3696.TW",
+  "3696:TPE",
+  "TPE",
+  true
+ ],
+ "TW|3696.HK": [
+  "3696.HK.TW",
+  "3696.HK:TPE",
+  "TPE",
+  true
+ ],
+ "TW|394420.KQ": [
+  "394420.KQ.TW",
+  "394420.KQ:TPE",
+  "TPE",
+  true
+ ],
+ "TW|600000": [
+  "600000.TW",
+  "600000:TPE",
+  "TPE",
+  true
+ ],
+ "TW|6921.TW": [
+  "6921.TW",
+  "6921:TPE",
+  "TPE",
+  true
+ ],
+ "TW|7888.TWO": [
+  "7888.TWO",
+  "7888:TPEX",
+  "TPEX",
+  true
+ ],
+ "TW|AAPL": [
+  "AAPL.TW",
+  "AAPL:TPE",
+  "TPE",
+  true
+ ],
+ "TW|AB.PA": [
+  "AB.PA.TW",
+  "AB.PA:TPE",
+  "TPE",
+  true
+ ],
+ "TW|CCDS.V": [
+  "CCDS.V.TW",
+  "CCDS.V:TPE",
+  "TPE",
+  true
+ ],
+ "TW|OBCK.DE": [
+  "OBCK.DE.TW",
+  "OBCK.DE:TPE",
+  "TPE",
+  true
+ ],
+ "TW|RELI": [
+  "RELI.TW",
+  "RELI:TPE",
+  "TPE",
+  true
+ ],
+ "TW|RELI.NS": [
+  "RELI.NS.TW",
+  "RELI.NS:TPE",
+  "TPE",
+  true
+ ],
+ "TW|VOD.L": [
+  "VOD.L.TW",
+  "VOD.L:TPE",
+  "TPE",
+  true
+ ],
+ "TW|X.BO": [
+  "X.BO.TW",
+  "X.BO:TPE",
+  "TPE",
+  true
+ ],
+ "TW|ZEF.F": [
+  "ZEF.F.TW",
+  "ZEF.F:TPE",
+  "TPE",
+  true
+ ],
+ "UK|001257.SZ": [
+  "001257.SZ.L",
+  "001257.SZ:LON",
+  "LON",
+  true
+ ],
+ "UK|279570.KS": [
+  "279570.KS.L",
+  "279570.KS:LON",
+  "LON",
+  true
+ ],
+ "UK|3696": [
+  "3696.L",
+  "3696:LON",
+  "LON",
+  true
+ ],
+ "UK|3696.HK": [
+  "3696.HK.L",
+  "3696.HK:LON",
+  "LON",
+  true
+ ],
+ "UK|394420.KQ": [
+  "394420.KQ.L",
+  "394420.KQ:LON",
+  "LON",
+  true
+ ],
+ "UK|600000": [
+  "600000.L",
+  "600000:LON",
+  "LON",
+  true
+ ],
+ "UK|6921.TW": [
+  "6921.TW.L",
+  "6921.TW:LON",
+  "LON",
+  true
+ ],
+ "UK|7888.TWO": [
+  "7888.TWO.L",
+  "7888.TWO:LON",
+  "LON",
+  true
+ ],
+ "UK|AAPL": [
+  "AAPL.L",
+  "AAPL:LON",
+  "LON",
+  true
+ ],
+ "UK|AB.PA": [
+  "AB.PA.L",
+  "AB.PA:LON",
+  "LON",
+  true
+ ],
+ "UK|CCDS.V": [
+  "CCDS.V.L",
+  "CCDS.V:LON",
+  "LON",
+  true
+ ],
+ "UK|OBCK.DE": [
+  "OBCK.DE.L",
+  "OBCK.DE:LON",
+  "LON",
+  true
+ ],
+ "UK|RELI": [
+  "RELI.L",
+  "RELI:LON",
+  "LON",
+  true
+ ],
+ "UK|RELI.NS": [
+  "RELI.NS.L",
+  "RELI.NS:LON",
+  "LON",
+  true
+ ],
+ "UK|VOD.L": [
+  "VOD.L",
+  "VOD:LON",
+  "LON",
+  true
+ ],
+ "UK|X.BO": [
+  "X.BO.L",
+  "X.BO:LON",
+  "LON",
+  true
+ ],
+ "UK|ZEF.F": [
+  "ZEF.F.L",
+  "ZEF.F:LON",
+  "LON",
+  true
+ ],
+ "US|001257.SZ": [
+  "001257.SZ",
+  "001257.SZ:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|279570.KS": [
+  "279570.KS",
+  "279570.KS:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|3696": [
+  "3696",
+  "3696:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|3696.HK": [
+  "3696.HK",
+  "3696.HK:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|394420.KQ": [
+  "394420.KQ",
+  "394420.KQ:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|600000": [
+  "600000",
+  "600000:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|6921.TW": [
+  "6921.TW",
+  "6921.TW:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|7888.TWO": [
+  "7888.TWO",
+  "7888.TWO:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|AAPL": [
+  "AAPL",
+  "AAPL:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|AB.PA": [
+  "AB.PA",
+  "AB.PA:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|CCDS.V": [
+  "CCDS.V",
+  "CCDS.V:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|OBCK.DE": [
+  "OBCK.DE",
+  "OBCK.DE:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|RELI": [
+  "RELI",
+  "RELI:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|RELI.NS": [
+  "RELI.NS",
+  "RELI.NS:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|VOD.L": [
+  "VOD.L",
+  "VOD.L:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|X.BO": [
+  "X.BO",
+  "X.BO:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "US|ZEF.F": [
+  "ZEF.F",
+  "ZEF.F:NASDAQ",
+  "NASDAQ",
+  true
+ ],
+ "XX|001257.SZ": [
+  "001257.SZ",
+  "001257.SZ",
+  null,
+  false
+ ],
+ "XX|279570.KS": [
+  "279570.KS",
+  "279570.KS",
+  null,
+  false
+ ],
+ "XX|3696": [
+  "3696",
+  "3696",
+  null,
+  false
+ ],
+ "XX|3696.HK": [
+  "3696.HK",
+  "3696.HK",
+  null,
+  false
+ ],
+ "XX|394420.KQ": [
+  "394420.KQ",
+  "394420.KQ",
+  null,
+  false
+ ],
+ "XX|600000": [
+  "600000",
+  "600000",
+  null,
+  false
+ ],
+ "XX|6921.TW": [
+  "6921.TW",
+  "6921.TW",
+  null,
+  false
+ ],
+ "XX|7888.TWO": [
+  "7888.TWO",
+  "7888.TWO",
+  null,
+  false
+ ],
+ "XX|AAPL": [
+  "AAPL",
+  "AAPL",
+  null,
+  false
+ ],
+ "XX|AB.PA": [
+  "AB.PA",
+  "AB.PA",
+  null,
+  false
+ ],
+ "XX|CCDS.V": [
+  "CCDS.V",
+  "CCDS.V",
+  null,
+  false
+ ],
+ "XX|OBCK.DE": [
+  "OBCK.DE",
+  "OBCK.DE",
+  null,
+  false
+ ],
+ "XX|RELI": [
+  "RELI",
+  "RELI",
+  null,
+  false
+ ],
+ "XX|RELI.NS": [
+  "RELI.NS",
+  "RELI.NS",
+  null,
+  false
+ ],
+ "XX|VOD.L": [
+  "VOD.L",
+  "VOD.L",
+  null,
+  false
+ ],
+ "XX|X.BO": [
+  "X.BO",
+  "X.BO",
+  null,
+  false
+ ],
+ "XX|ZEF.F": [
+  "ZEF.F",
+  "ZEF.F",
+  null,
+  false
+ ],
+ "ZA|001257.SZ": [
+  "001257.SZ.JO",
+  "001257.SZ:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|279570.KS": [
+  "279570.KS.JO",
+  "279570.KS:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|3696": [
+  "3696.JO",
+  "3696:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|3696.HK": [
+  "3696.HK.JO",
+  "3696.HK:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|394420.KQ": [
+  "394420.KQ.JO",
+  "394420.KQ:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|600000": [
+  "600000.JO",
+  "600000:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|6921.TW": [
+  "6921.TW.JO",
+  "6921.TW:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|7888.TWO": [
+  "7888.TWO.JO",
+  "7888.TWO:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|AAPL": [
+  "AAPL.JO",
+  "AAPL:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|AB.PA": [
+  "AB.PA.JO",
+  "AB.PA:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|CCDS.V": [
+  "CCDS.V.JO",
+  "CCDS.V:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|OBCK.DE": [
+  "OBCK.DE.JO",
+  "OBCK.DE:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|RELI": [
+  "RELI.JO",
+  "RELI:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|RELI.NS": [
+  "RELI.NS.JO",
+  "RELI.NS:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|VOD.L": [
+  "VOD.L.JO",
+  "VOD.L:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|X.BO": [
+  "X.BO.JO",
+  "X.BO:JSE",
+  "JSE",
+  true
+ ],
+ "ZA|ZEF.F": [
+  "ZEF.F.JO",
+  "ZEF.F:JSE",
+  "JSE",
+  true
+ ]
+}
