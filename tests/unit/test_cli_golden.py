@@ -8,6 +8,7 @@ import os
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 
 import pytest
 
@@ -28,7 +29,7 @@ def db_url():
     cur = admin.cursor()
     cur.execute(f"DROP DATABASE IF EXISTS {DBNAME}")
     cur.execute(f"CREATE DATABASE {DBNAME}")
-    url = f"postgresql://localhost/{DBNAME}"
+    url = urlsplit(ADMIN)._replace(path=f"/{DBNAME}").geturl()  # keep the admin URL's user/host/port
     conn = psycopg2.connect(url)
     conn.autocommit = True
     conn.cursor().execute((ROOT / "tests" / "setup_test_schema.sql").read_text())
