@@ -12,6 +12,8 @@ Usage:
 Output: prints a summary table and writes a CSV that
 backfill_missing_history.py consumes directly.
 """
+from __future__ import annotations
+
 import argparse
 import csv
 import os
@@ -23,9 +25,12 @@ from exchange_map import EXCHANGE_MAP, resolve_ticker
 
 FACT_TABLE = "ltm_fundamentals_fact"
 SYMBOLS_TABLE = "ltm_symbols"
+DAYS_PER_YEAR = 365.25
+MAX_PRINTED_ROWS = 50
 
 
-def business_days_between(start, end):
+def business_days_between(start, end) -> int:
+    """Count Mon-Fri days between two dates, inclusive."""
     days = 0
     d = start
     while d <= end:
@@ -33,6 +38,19 @@ def business_days_between(start, end):
             days += 1
         d += dt.timedelta(days=1)
     return days
+
+
+def classify_history(span_years, coverage_pct, min_years, gap_threshold):
+    """Return "short_history", "gappy", or None when history is sufficient.
+
+    span_years: years between first and last row; coverage_pct: actual/expected
+    trading days as a fraction (0-1).
+    """
+    if span_years < min_years:
+        return "short_history"
+    if coverage_pct < gap_threshold:
+        return "gappy"
+    return None
 
 
 def main():
@@ -67,15 +85,12 @@ def main():
     excluded_unmapped = 0
     unmapped_countries = set()
     for country, symbol, min_dt, max_dt, row_count in rows:
-        span_years = (max_dt - min_dt).days / 365.25
+        span_years = (max_dt - min_dt).days / DAYS_PER_YEAR
         expected_days = business_days_between(min_dt, max_dt) or 1
         coverage_pct = row_count / expected_days
 
-        if span_years < args.min_years:
-            reason = "short_history"
-        elif coverage_pct < args.gap_threshold:
-            reason = "gappy"
-        else:
+        reason = classify_history(span_years, coverage_pct, args.min_years, args.gap_threshold)
+        if reason is None:
             continue  # sufficient, skip
 
         if row_count < args.min_rows:
@@ -132,11 +147,11 @@ def main():
 
     if flagged:
         print(f"{'SYMBOL':<10}{'COUNTRY':<9}{'REASON':<15}{'SPAN(y)':<9}{'COVERAGE':<10}{'MISSING(y)':<11}")
-        for r in flagged[:50]:
+        for r in flagged[:MAX_PRINTED_ROWS]:
             print(f"{r['symbol']:<10}{r['country']:<9}{r['reason']:<15}{r['span_years']:<9}"
                   f"{r['coverage_pct']:<10}{r['years_missing']:<11}")
-        if len(flagged) > 50:
-            print(f"... and {len(flagged) - 50} more (see {args.out})")
+        if len(flagged) > MAX_PRINTED_ROWS:
+            print(f"... and {len(flagged) - MAX_PRINTED_ROWS} more (see {args.out})")
 
     print(f"\nWrote {args.out}")
 

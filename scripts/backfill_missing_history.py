@@ -32,6 +32,8 @@ Usage:
 
 Dry-run by default — pass --apply to actually write.
 """
+from __future__ import annotations
+
 import argparse
 import csv
 import datetime as dt
@@ -42,9 +44,15 @@ from sqlalchemy import create_engine, text
 
 FACT_TABLE = "ltm_fundamentals_fact"
 ESTIMATE_TABLE = "ltm_price_estimate"
+DEFAULT_SLEEP_S = 1.0
+DEFAULT_NSE_LOOKBACK_YEARS = 10
+SERPAPI_URL = "https://serpapi.com/search"
+SERPAPI_TIMEOUT_S = 30
+DAYS_PER_YEAR = 365
 
 
-def ensure_estimate_table(conn):
+def ensure_estimate_table(conn) -> None:
+    """Create the close-only estimate table if missing (idempotent)."""
     conn.execute(text(f"""
         CREATE TABLE IF NOT EXISTS {ESTIMATE_TABLE} (
             country CHAR(2) NOT NULL,
@@ -76,7 +84,7 @@ def fetch_nse(symbol, lookback_years):
     from jugaad_data.nse import stock_df as nse_stock_df
 
     to_date = dt.date.today()
-    from_date = to_date - dt.timedelta(days=365 * lookback_years)
+    from_date = to_date - dt.timedelta(days=DAYS_PER_YEAR * lookback_years)
     raw = nse_stock_df(symbol=symbol, from_date=from_date, to_date=to_date, series="EQ")
     if raw is None or raw.empty:
         return None
@@ -98,9 +106,9 @@ def fetch_serpapi(gfinance_query, api_key, window="5Y"):
     list of (date, price) tuples, or None if nothing found."""
     import requests
     resp = requests.get(
-        "https://serpapi.com/search",
+        SERPAPI_URL,
         params={"engine": "google_finance", "q": gfinance_query, "window": window, "api_key": api_key},
-        timeout=30,
+        timeout=SERPAPI_TIMEOUT_S,
     )
     resp.raise_for_status()
     data = resp.json()
@@ -117,7 +125,18 @@ def fetch_serpapi(gfinance_query, api_key, window="5Y"):
     return out or None
 
 
+def _as_date(idx):
+    """Normalise a pandas Timestamp / datetime / date index value to a date."""
+    return idx.date() if hasattr(idx, "date") else idx
+
+
+def count_new_rows(hist, skip_dates) -> int:
+    """Number of rows in an OHLCV frame whose date is not in skip_dates."""
+    return sum(1 for idx in hist.index if _as_date(idx) not in skip_dates)
+
+
 def existing_dates(conn, country, symbol_id, table):
+    """Set of dates already stored in `table` for (country, symbol_id)."""
     rows = conn.execute(
         text(f"SELECT dt FROM {table} WHERE country = :c AND symbol_id = :sid"),
         {"c": country, "sid": symbol_id},
@@ -125,10 +144,11 @@ def existing_dates(conn, country, symbol_id, table):
     return {r[0] for r in rows}
 
 
-def insert_ohlcv_rows(conn, country, symbol_id, hist, skip_dates):
+def insert_ohlcv_rows(conn, country, symbol_id, hist, skip_dates) -> int:
+    """Insert OHLCV rows not in skip_dates into the fact table; returns rows attempted."""
     rows = []
     for idx, r in hist.iterrows():
-        d = idx.date() if hasattr(idx, "date") else idx
+        d = _as_date(idx)
         if d in skip_dates:
             continue
         rows.append({
@@ -149,11 +169,12 @@ def insert_ohlcv_rows(conn, country, symbol_id, hist, skip_dates):
     return len(rows)
 
 
-def insert_estimate_rows(conn, country, symbol_id, points, skip_dates, source):
+def insert_estimate_rows(conn, country, symbol_id, points, skip_dates, source) -> int:
+    """Insert close-only (date, price) points not in skip_dates; returns rows attempted."""
     rows = []
     for date_str, price in points:
         try:
-            d = date_str if hasattr(date_str, "year") else __import__("datetime").date.fromisoformat(date_str[:10])
+            d = date_str if hasattr(date_str, "year") else dt.date.fromisoformat(date_str[:10])
         except ValueError:
             continue
         if d in skip_dates:
@@ -170,6 +191,7 @@ def insert_estimate_rows(conn, country, symbol_id, points, skip_dates, source):
 
 
 def process_row(conn, row, apply_changes, serpapi_key, sleep_s, nse_lookback_years):
+    """Backfill one thin-history CSV row via Yahoo -> NSE (IN) -> SerpApi; returns a result dict."""
     country, symbol = row["country"], row["symbol"]
     symbol_id = conn.execute(
         text("SELECT symbol_id FROM ltm_symbols WHERE symbol = :s"), {"s": symbol}
@@ -189,7 +211,7 @@ def process_row(conn, row, apply_changes, serpapi_key, sleep_s, nse_lookback_yea
 
     if hist is not None:
         added = insert_ohlcv_rows(conn, country, symbol_id, hist, fact_dates) if apply_changes else \
-            sum(1 for idx in hist.index if (idx.date() if hasattr(idx, "date") else idx) not in fact_dates)
+            count_new_rows(hist, fact_dates)
         time.sleep(sleep_s)
         return {"symbol": symbol, "country": country, "source": "yahoo", "rows_added": added, "note": ""}
 
@@ -201,9 +223,10 @@ def process_row(conn, row, apply_changes, serpapi_key, sleep_s, nse_lookback_yea
         else:
             if hist is not None:
                 added = insert_ohlcv_rows(conn, country, symbol_id, hist, fact_dates) if apply_changes else \
-                    sum(1 for idx in hist.index if (idx.date() if hasattr(idx, "date") else idx) not in fact_dates)
+                    count_new_rows(hist, fact_dates)
                 time.sleep(sleep_s)
-                return {"symbol": symbol, "country": country, "source": "nse (bhavcopy)", "rows_added": added, "note": ""}
+                return {"symbol": symbol, "country": country, "source": "nse (bhavcopy)",
+                        "rows_added": added, "note": ""}
         time.sleep(sleep_s)
 
     if not serpapi_key:
@@ -234,9 +257,9 @@ def main():
     ap.add_argument("--csv", default="thin_history.csv")
     ap.add_argument("--apply", action="store_true", help="actually write; default is dry-run")
     ap.add_argument("--serpapi-key", default=os.environ.get("SERPAPI_KEY"))
-    ap.add_argument("--sleep", type=float, default=1.0)
+    ap.add_argument("--sleep", type=float, default=DEFAULT_SLEEP_S)
     ap.add_argument("--limit", type=int, default=None)
-    ap.add_argument("--nse-lookback-years", type=int, default=10,
+    ap.add_argument("--nse-lookback-years", type=int, default=DEFAULT_NSE_LOOKBACK_YEARS,
                      help="how far back to request from NSE directly for India symbols Yahoo misses")
     args = ap.parse_args()
 

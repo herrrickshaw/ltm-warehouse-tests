@@ -14,6 +14,8 @@ never blindly append on top of an existing suffix (that would turn
 "3696.HK" into the broken "3696.HK.HK").
 """
 
+from __future__ import annotations
+
 EXCHANGE_MAP = {
     "US": {"suffix_to_gfinance": {"": "NASDAQ"}, "default_suffix": ""},
     "IN": {"suffix_to_gfinance": {"": "NSE", ".NS": "NSE", ".BO": "BOM"}, "default_suffix": ".NS"},

@@ -1,0 +1,9 @@
+Checked 7 symbols. Flagged 4 with < 5.0y history or < 85% day-coverage within their span.
+
+SYMBOL    COUNTRY  REASON         SPAN(y)  COVERAGE  MISSING(y) 
+NEWCO     US       short_history  0.49     100.0     4.51       
+OLDIN     IN       short_history  3.0      100.0     2.0        
+BARC      GB       short_history  4.49     100.0     0.51       
+GAPCO     US       gappy          5.98     20.1      0.0        
+
+Wrote thin.csv

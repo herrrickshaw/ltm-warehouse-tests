@@ -1,0 +1,8 @@
+Wrote 7 symbols to ex.csv (7 with a resolved exchange, 0 unmapped).
+
+Exchange breakdown:
+  US   NASDAQ      4
+  IN   NSE         2
+  GB   LON         1
+
+Also stored in warehouse table ltm_symbol_exchange (7 rows).

@@ -1,0 +1,5 @@
+country,symbol,reason,min_dt,max_dt,span_years,row_count,expected_days,coverage_pct,years_missing,yahoo_ticker,gfinance_query
+US,NEWCO,short_history,2026-01-05,2026-07-03,0.49,130,130,100.0,4.51,NEWCO,NEWCO:NASDAQ
+IN,OLDIN,short_history,2023-07-05,2026-07-03,3.0,783,783,100.0,2.0,OLDIN.NS,OLDIN:NSE
+GB,BARC,short_history,2022-01-06,2026-07-03,4.49,1172,1172,100.0,0.51,BARC.L,BARC:LON
+US,GAPCO,gappy,2020-07-06,2026-06-29,5.98,313,1561,20.1,0.0,GAPCO,GAPCO:NASDAQ

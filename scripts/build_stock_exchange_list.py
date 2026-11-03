@@ -16,6 +16,8 @@ in the warehouse (symbol_id, country, exchange, yahoo_ticker,
 gfinance_query, mapped), so other code in the warehouse can join against
 it instead of importing this script's mapping logic.
 """
+from __future__ import annotations
+
 import argparse
 import csv
 import os
@@ -27,29 +29,22 @@ from exchange_map import resolve_exchange_label
 FACT_TABLE = "ltm_fundamentals_fact"
 SYMBOLS_TABLE = "ltm_symbols"
 OUTPUT_TABLE = "ltm_symbol_exchange"
+CSV_FIELDS = ["country", "symbol", "symbol_id", "exchange", "yahoo_ticker", "gfinance_query", "mapped"]
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="stock_exchange_list.csv")
-    ap.add_argument("--store-table", action="store_true",
-                     help="also write the result into ltm_symbol_exchange in the warehouse")
-    args = ap.parse_args()
-
-    db_url = os.environ.get("DB")
-    if not db_url:
-        print("Set DB=postgresql://user:pass@host:port/dbname", file=sys.stderr)
-        sys.exit(1)
-
-    engine = create_engine(db_url)
+def fetch_symbol_rows(engine):
+    """(country, symbol_id, symbol) for every symbol that has fact rows."""
     with engine.begin() as conn:
-        rows = conn.execute(text(f"""
+        return conn.execute(text(f"""
             SELECT DISTINCT f.country, s.symbol_id, s.symbol
             FROM {FACT_TABLE} f
             JOIN {SYMBOLS_TABLE} s ON s.symbol_id = f.symbol_id
             ORDER BY f.country, s.symbol
         """)).fetchall()
 
+
+def build_rows(rows):
+    """Resolve each (country, symbol_id, symbol) to an output dict; returns (out_rows, unmapped_by_country)."""
     out_rows = []
     unmapped_countries = {}
     for country, symbol_id, symbol in rows:
@@ -65,16 +60,21 @@ def main():
         })
         if not mapped:
             unmapped_countries[country] = unmapped_countries.get(country, 0) + 1
+    return out_rows, unmapped_countries
 
-    with open(args.out, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=[
-            "country", "symbol", "symbol_id", "exchange", "yahoo_ticker", "gfinance_query", "mapped",
-        ])
+
+def write_csv(path, out_rows) -> None:
+    """Write the resolved rows to a CSV with the CSV_FIELDS header."""
+    with open(path, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
         writer.writeheader()
         writer.writerows(out_rows)
 
+
+def print_summary(out_rows, unmapped_countries, path) -> None:
+    """Print mapped/unmapped totals and the per-(country, exchange) breakdown."""
     mapped_count = sum(1 for r in out_rows if r["mapped"])
-    print(f"Wrote {len(out_rows)} symbols to {args.out} ({mapped_count} with a resolved exchange, "
+    print(f"Wrote {len(out_rows)} symbols to {path} ({mapped_count} with a resolved exchange, "
           f"{len(out_rows) - mapped_count} unmapped).")
     if unmapped_countries:
         print(f"Unmapped by country: {unmapped_countries}")
@@ -87,28 +87,51 @@ def main():
     for (country, exchange), count in sorted(counts.items(), key=lambda kv: -kv[1]):
         print(f"  {country:<5}{exchange:<12}{count}")
 
+
+def store_table(engine, out_rows) -> None:
+    """Drop and recreate ltm_symbol_exchange from out_rows."""
+    with engine.begin() as conn:
+        # Recomputed fully each run — drop and recreate rather than
+        # TRUNCATE, so a stale schema from a previous failed run (e.g.
+        # the old single-column symbol_id PK) can't linger and cause a
+        # silent CREATE TABLE IF NOT EXISTS no-op.
+        conn.execute(text(f"DROP TABLE IF EXISTS {OUTPUT_TABLE}"))
+        conn.execute(text(f"""
+            CREATE TABLE {OUTPUT_TABLE} (
+                symbol_id INT4 NOT NULL REFERENCES {SYMBOLS_TABLE}(symbol_id),
+                country CHAR(2) NOT NULL,
+                exchange TEXT,
+                yahoo_ticker TEXT NOT NULL,
+                gfinance_query TEXT NOT NULL,
+                mapped BOOLEAN NOT NULL,
+                PRIMARY KEY (symbol_id, country)
+            )
+        """))
+        conn.execute(text(f"""
+            INSERT INTO {OUTPUT_TABLE} (symbol_id, country, exchange, yahoo_ticker, gfinance_query, mapped)
+            VALUES (:symbol_id, :country, :exchange, :yahoo_ticker, :gfinance_query, :mapped)
+        """), out_rows)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default="stock_exchange_list.csv")
+    ap.add_argument("--store-table", action="store_true",
+                     help="also write the result into ltm_symbol_exchange in the warehouse")
+    args = ap.parse_args()
+
+    db_url = os.environ.get("DB")
+    if not db_url:
+        print("Set DB=postgresql://user:pass@host:port/dbname", file=sys.stderr)
+        sys.exit(1)
+
+    engine = create_engine(db_url)
+    out_rows, unmapped_countries = build_rows(fetch_symbol_rows(engine))
+    write_csv(args.out, out_rows)
+    print_summary(out_rows, unmapped_countries, args.out)
+
     if args.store_table:
-        with engine.begin() as conn:
-            # Recomputed fully each run — drop and recreate rather than
-            # TRUNCATE, so a stale schema from a previous failed run (e.g.
-            # the old single-column symbol_id PK) can't linger and cause a
-            # silent CREATE TABLE IF NOT EXISTS no-op.
-            conn.execute(text(f"DROP TABLE IF EXISTS {OUTPUT_TABLE}"))
-            conn.execute(text(f"""
-                CREATE TABLE {OUTPUT_TABLE} (
-                    symbol_id INT4 NOT NULL REFERENCES {SYMBOLS_TABLE}(symbol_id),
-                    country CHAR(2) NOT NULL,
-                    exchange TEXT,
-                    yahoo_ticker TEXT NOT NULL,
-                    gfinance_query TEXT NOT NULL,
-                    mapped BOOLEAN NOT NULL,
-                    PRIMARY KEY (symbol_id, country)
-                )
-            """))
-            conn.execute(text(f"""
-                INSERT INTO {OUTPUT_TABLE} (symbol_id, country, exchange, yahoo_ticker, gfinance_query, mapped)
-                VALUES (:symbol_id, :country, :exchange, :yahoo_ticker, :gfinance_query, :mapped)
-            """), out_rows)
+        store_table(engine, out_rows)
         print(f"\nAlso stored in warehouse table {OUTPUT_TABLE} ({len(out_rows)} rows).")
 
 
