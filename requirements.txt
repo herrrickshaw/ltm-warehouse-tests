@@ -1,6 +1,9 @@
 sqlalchemy>=1.4
 psycopg2-binary>=2.9
+# SQLAlchemy >= 2.1 maps plain postgresql:// URLs to psycopg (v3), not psycopg2
+psycopg[binary]>=3.1
 pandas>=1.3
 yfinance
 requests
 jugaad-data
+pytest

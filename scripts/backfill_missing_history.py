@@ -149,16 +149,25 @@ def insert_ohlcv_rows(conn, country, symbol_id, hist, skip_dates):
     return len(rows)
 
 
-def insert_estimate_rows(conn, country, symbol_id, points, skip_dates, source):
-    rows = []
+def new_estimate_points(points, skip_dates):
+    """(date, price) pairs that would actually be inserted: parseable dates
+    not already covered. Shared by --apply and the dry-run count so the two
+    can never disagree."""
+    out = []
     for date_str, price in points:
         try:
-            d = date_str if hasattr(date_str, "year") else __import__("datetime").date.fromisoformat(date_str[:10])
+            d = date_str if hasattr(date_str, "year") else dt.date.fromisoformat(date_str[:10])
         except ValueError:
             continue
         if d in skip_dates:
             continue
-        rows.append({"c": country, "sid": symbol_id, "d": d, "cl": price, "src": source})
+        out.append((d, price))
+    return out
+
+
+def insert_estimate_rows(conn, country, symbol_id, points, skip_dates, source):
+    rows = [{"c": country, "sid": symbol_id, "d": d, "cl": price, "src": source}
+            for d, price in new_estimate_points(points, skip_dates)]
     if not rows:
         return 0
     conn.execute(text(f"""
@@ -224,7 +233,7 @@ def process_row(conn, row, apply_changes, serpapi_key, sleep_s, nse_lookback_yea
                 "note": "no data from any source"}
 
     added = insert_estimate_rows(conn, country, symbol_id, points, skip, "serpapi") if apply_changes else \
-        sum(1 for date_str, _ in points)
+        len(new_estimate_points(points, skip))
     return {"symbol": symbol, "country": country, "source": "serpapi (estimate, close-only)",
             "rows_added": added, "note": ""}
 
