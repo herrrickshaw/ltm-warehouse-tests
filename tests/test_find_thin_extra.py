@@ -111,3 +111,20 @@ def test_ties_sort_by_coverage_then_input_order(monkeypatch, tmp_path):
     start = END - dt.timedelta(days=200)
     rows = [("US", "HI", start, END, 130), ("US", "LO", start, END, 90), ("US", "MID", start, END, 110)]
     assert [r["symbol"] for r in run(monkeypatch, tmp_path, rows)] == ["LO", "MID", "HI"]
+
+
+def test_span_exactly_equal_to_min_years_is_not_short(monkeypatch, tmp_path):
+    start = END - dt.timedelta(days=1461)                       # 1461 / 365.25 == 4.0 exactly
+    rows = [("US", "A", start, END, ft.business_days_between(start, END))]
+    assert run(monkeypatch, tmp_path, rows, "--min-years", "4") == []
+    assert [r["reason"] for r in run(monkeypatch, tmp_path, rows, "--min-years", "4.01")] == ["short_history"]
+
+
+def test_coverage_exactly_equal_to_threshold_is_not_gappy(monkeypatch, tmp_path):
+    start = years_ago(6)
+    expected = ft.business_days_between(start, END)
+    count = expected // 2
+    threshold = count / expected
+    rows = [("US", "A", start, END, count)]
+    assert run(monkeypatch, tmp_path, rows, "--gap-threshold", repr(threshold)) == []
+    assert [r["reason"] for r in run(monkeypatch, tmp_path, rows, "--gap-threshold", repr(threshold + 0.001))] == ["gappy"]

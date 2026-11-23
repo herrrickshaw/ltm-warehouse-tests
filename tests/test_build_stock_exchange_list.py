@@ -95,7 +95,7 @@ def test_empty_warehouse_still_writes_header(run, capsys):
 def test_store_table_recreates_and_inserts_all_rows(run, capsys):
     log, out, _ = run("--store-table")
     texts = [entry[0] for entry in log if isinstance(entry[0], str) and entry[0] != "engine"]
-    assert texts[1].startswith("DROP TABLE IF EXISTS ltm_symbol_exchange")
+    assert texts[1] == "DROP TABLE IF EXISTS ltm_symbol_exchange"
     assert texts[2].startswith("CREATE TABLE ltm_symbol_exchange")
     assert "PRIMARY KEY (symbol_id, country)" in texts[2]
     assert texts[3].startswith("INSERT INTO ltm_symbol_exchange")
